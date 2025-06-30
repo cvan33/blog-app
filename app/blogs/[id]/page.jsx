@@ -42,17 +42,11 @@ const Page = ({ params }) => {
         </div>
             <div className="mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10">
                 <Image className='border-4 border-white' src={data.image} width={1280} height={720} alt='Image' />
-                <h1 className="my-8 text-[26px] font-semibold">Introduction:</h1>
-                <p>{data.description}</p>
-                <h3 className="my-5 text-[18px] font-semibold">Step 1: Self-Reflection and Goal Setting</h3>
-                <p className="my-3">Before you can manage your lifestyle, you must have a clear achieve. Start by reflecting on your values, aspirations, and long-term goals.</p>
-                <p className="my-3">Before you can manage your lifestyle, you must have a clear achieve. Start by reflecting on your values, aspirations, and long-term goals.</p>
-                <h3 className="my-5 text-[18px] font-semibold">Step 1: Self-Reflection and Goal Setting</h3>
-                <p className="my-3">Before you can manage your lifestyle, you must have a clear achieve. Start by reflecting on your values, aspirations, and long-term goals.</p>
-                <p className="my-3">Before you can manage your lifestyle, you must have a clear achieve. Start by reflecting on your values, aspirations, and long-term goals.</p>
-                <h3 className="my-5 text-[18px] font-semibold">Conclusion</h3>
-                <p className="my-3">Before you can manage your lifestyle, you must have a clear achieve. Start by reflecting on your values, aspirations, and long-term goals.</p>
-                <p className="my-3">Managing your lifestyle is a journey that requires commitment and self-awareness. By follwing this step-step guide, you can take control of your life and amake meaningful changes that lead to amore balance and fulflling lifestyle. </p>
+                
+                <div className="blog-content" dangerouslySetInnerHTML={{__html:data.descriptiop}}>
+
+                </div>
+                
                 <div className="my-24">
                     <p className="text-black font-sembold my-4">Share this article on social media</p>
                     <div className="flex">
